@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+/* General styles */
+body {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: hsl(172, 37%, 88%);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+.header-background {
+    background: url("prtfolio/bk.jpg") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular image */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Section styles */
+#about,
+#portfolio,
+#contact {
+    background-color: #e1e2ed; /* Set background color to white */
+    padding: 15px;
+    border-radius: 0.5%;
+    margin-bottom: 10px;
+}
+
+/* Text and links styles */
+h2 {
+    color: #fffcfc; /* Adjust this if necessary */
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+}
